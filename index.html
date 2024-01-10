@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+    <!--Thank you for visiting and pressing the inspect element, or maybe you cloned this code via my GitHub-->
+    <!--                                                                                 -->
+    <!--Source code : https://github.com/RavioliMavioli/RavioliMavioli.github.io -->
+    <!--                                                                                 -->
+    <!--LIBRARY AND SCRIPT USED-->
+    <!--                                                                                 -->
+    <!--Pacman-loading animation    : https://codepen.io/iddar/pen/xwXowq -->
+    <!--Animate on Scroll           : https://michalsnik.github.io/aos/ -->
+    <!--Lightbox                    : https://github.com/lokesh/lightbox2 -->
+    <!--Google Analytics            : https://analytics.google.com/ -->
+    <!--Scrolling script            : https://stackoverflow.com/questions/49820013/javascript-scrollintoview-smooth-scroll-and-offset -->
+    <!--                                                                                 -->
+
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZP9QSS9HW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FZP9QSS9HW');
+    </script>
+    
+    <!--Import files and libaries-->
+    <link rel="shortcut icon" type="image/x-icon" href="logo-fanndev.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-9">
+    <title>Fanndev</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/boxshadow.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Lightbox/lightbox-plus-jquery.js"></script>
+    <script>lightbox.option({ disableScrolling: true });</script>
+    
+    
+</head>
+<body>
+    <!--Page loading animation-->
+    <div class="loader-wrapper">
+        <span class="pac-man"></span>
+        <div class="loading-text"><p>Loading assets...</p></div>
+    </div>
+    <!--Header section (Icon, title, etc)-->
+    <div id="landing" class="header" data-aos="fade-up" loading="lazy">
+    <div id="header-img" class="header"></div>
+    <div id="scrollpath"></div>
+    <div id="scrollbar"></div>
+    <div class="Title">
+        <img src="resource/image/charackter/raiden.png" class="shad-mid char">
+        <div class="external-links"><br>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <p class="message">Raiden Shogun — Perwujudan petir yang paling agung dan menakutkan didunia, penguasa tertinggi Inazuma Shogunate. Dengan memegang kekuatan petir, dia terus mengejar keabadian seorang diri
+                  </p>
+                  <img class="sound" src="resource/image/icon/sound.png" alt="sound">
+                </div>
+              </div>
+            <ul>
+                <h1 class="judul">The Lord - Raiden Shogun</h1>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <!--Sticky navbar-->
+    <div class="navbar box-mid">
+        <div class="navbrand" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTarget('landing')">Fanndev</a></div>
+        <div class="navcenter" data-aos="fade-up" data-aos-once=true>
+            <a onclick="scrollToTargetAdjusted('picture',75), Unclick()">Picture</a>
+            <a onclick="scrollToTargetAdjusted('commission',75), Unclick()">Character</a>
+            <a id="nav-contact" onclick="scrollToTargetAdjusted('contact',75), Unclick()">Contact</a>
+        </div>
+        <div class="navsupport" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTargetAdjusted('contact',75)" target="_blank">Contact</a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!--Main section-->
+    <div class="content">
+
+        <!--picture section-->
+        <div id="picture">
+            <div class="text-title" data-aos="fade-up"><p>Picture</p></div>
+            <div class="picture-container">
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/1.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/1.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+                
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/2.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/2.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/3.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/3.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/4.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/4.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/5.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/5.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/6.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/6.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/7.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/7.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="picture-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="picture-images" >
+                        <a href="resource/image/picture/big/8.jpg" data-lightbox="rav-picture"><img src="resource/image/picture/smol/8.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comission-character section-->
+        <div id="commission">
+            <div class="text-title comm-title" data-aos="fade-up"><p>Character</p></div>
+            <div class="commission-container animation-halfbody">
+                <div class="commission-container-left" data-aos="fade-up">
+                    <div class="img-solidcolor"></div>
+                    <div class="img-arch"></div>
+                    <div class="dynamic-price-container">
+                    </div>
+                </div>
+                <div class="commission-container-right" data-aos="fade-up">
+                    <div class="parts-container">
+                        <div class="parts-header text-normal"><p>Character</p></div>
+                        <div class="parts-lists">
+                            <a id="button1" class="char-button" data-image="resource/image/charackter/raiden.png"><img class="char-c" src="resource/image/charackter/1.png" alt="raiden"></a>
+                            <a id="button2" class="char-button" data-image="resource/image/charackter/yoimiya.png"><img class="char-c" src="resource/image/charackter/2.jpg" alt="yoimiya"></a>
+                            <a id="button3" class="char-button" data-image="resource/image/charackter/yelan.png"><img class="char-c" src="resource/image/charackter/3.png" alt="yelan"></a>
+                            <a id="button4" class="char-button" data-image="resource/image/charackter/yaemiko.png"><img class="char-c" src="resource/image/charackter/4.png" alt="yaemiko"></a>
+                            <a id="button5" class="char-button" data-image="resource/image/charackter/furina.png"><img class="char-c" src="resource/image/charackter/5.png" alt="furina"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="contact">
+            <div class="text-title" data-aos="fade-up"><p>Contact</p></div>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-inner-container ">
+                        <form id="FORM">
+                            <div class="text-header" data-aos="fade-up">Message</div>
+                            <br>
+                            <br>
+
+                            <div class="contact-thin-text" data-aos="fade-up">Name*</div>
+                            <input type="text" id="NAME" name="Name" class="box-mid" placeholder="Your name" required data-aos="fade-up">
+
+                            <div class="contact-thin-text" data-aos="fade-up">Email*</div>
+                            <input type="email" id="EMAIL" name="Email" class="box-mid" placeholder="Email address" required data-aos="fade-up">
+
+                            <div class="contact-thin-text" data-aos="fade-up">Message*</div>
+                            <textarea id="MESSAGE" name="Message" class="box-mid" rows="6" placeholder="Message" required data-aos="fade-up"></textarea>
+                            <div data-aos="fade-up">
+                                <div class="send box-mid" onclick="SendEmail()">Send</div>
+                            </div>
+                            
+                            <div class="text-header email-not-sent">
+                                Sending email...
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-inner-container">
+                        <div class="text-header" data-aos="fade-up">Get in touch</div>
+                        
+
+                        <div class="contact-thin-text" data-aos="fade-up">
+                        <p>You can contact me via my social media below:</p>
+                        </div>
+                        <div class="external-links external-links-2" data-aos="fade-up"><br>
+                            <ul>
+                                <li><a id="instagram" href="https://www.instagram.com/fanndev._/" target="_blank" onmouseover="ExternalLinksEnter('instagram')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/instagram.svg"><p>Instagram</p></a></li>
+                                <li><a id="twitter" href="https://twitter.com/have_fuun" target="_blank" onmouseover="ExternalLinksEnter('twitter')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/twitter.svg"><p>Twitter</p></a></li>
+                                <li><a id="github" href="https://github.com/fanndev" target="_blank" onmouseover="ExternalLinksEnter('github')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/Github.svg"><p>GitHub</p></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!--Page loading animation when loading is complete-->
+    <script>
+        $(window).on("load", function(){
+             $(".loader-wrapper").fadeOut("slow");
+        })
+    </script>
+    </div>
+    <!--Animate on Scroll library initialization-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:-75,
+        delay: 0,
+        duration: 1000,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+</body>
+<footer class="shad-bold">
+    <div class="B text-normal opacity-mid"><p>Web Ghensin by Fanndev<br><br></p></div>
+    
+    <div class="B text-normal"><p>♥ Created by Fanndev with Coffe and passion ♥</p></div>
+    <div class="B text-normal"><p>Powered by pure HTML/CSS and JavaScript<br><br></p></div>
+
+    <div class="B text-normal opacity-mid"><p>Contact: fanndev@gmail.com</p></div>
+</footer>
+</html>
+<!-- check -->
